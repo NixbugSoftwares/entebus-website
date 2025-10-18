@@ -29,7 +29,7 @@ jobs:
         run: |
           BRANCH=$(echo "${GITHUB_REF_NAME}" | tr '[:upper:]' '[:lower:]' | tr '/' '-')
           SHORT_SHA=${GITHUB_SHA::7}
-          echo "IMAGE=ghcr.io/${GITHUB_REPOSITORY_OWNER,,}/entebus-core-server" >> $GITHUB_ENV
+          echo "IMAGE=ghcr.io/${GITHUB_REPOSITORY_OWNER,,}/entebus-website" >> $GITHUB_ENV
           echo "BRANCH=$BRANCH" >> $GITHUB_ENV
           echo "SHORT_SHA=$SHORT_SHA" >> $GITHUB_ENV
 
